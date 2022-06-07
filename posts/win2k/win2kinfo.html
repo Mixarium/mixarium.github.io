@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+    body {
+        background-color: #696969;
+    }
+    h1 {
+        font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif; 
+        font-size: 40px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 700; 
+        line-height: 23px; 
+        } 
+    h3 { 
+        font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif; 
+        font-size: 25px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 700; 
+        line-height: 23px;
+         } 
+    p, a { 
+        font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif; 
+        font-size: 18px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 100; 
+        line-height: 23.4px; 
+        }
+    a {
+        color: white;
+    }
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mixarium's site - Windows 2000</title>
+    </head>
+    <body>
+        <a href="../postslist.html" style="float: right;">Return to the Posts page</a>
+        <a href="../../index.html" style="float: right; clear: right;">Return to the Home page</a>
+        <h1>Windows 2000 Notes</h1>
+        <hr>
+        <p>Here is where I explain the installation and software that can allow use of newer programs on Windows 2000.</p>
+        <h3>Windows 2000 Installation ISOs</h3>
+        <p>Here, I will link few URLs which contain downloads for Windows 2000 ISOs, not including upgrade types:</p>
+        <p>
+            <a href="https://winworldpc.com/product/windows-nt-2000/final">ISOs from winworldpc.com</a>
+            This is where several ISOs, with different editions and languages, can be downloaded. For personal use, It is recommended to download the Windows 2000 Professional ISO, containing Service Pack 4 (SP4) slipstreamed in. None of these ISOs are modified.
+        </p>
+        <p>
+            <a href="https://archive.org/details/w-2-k-pro-vl-fullslip">win32's ISO hosted on archive.org</a>
+            This ISO is modified. Check the description on archive.org for more details. But, as a summary, it has slipstreamed updates up until 2013, with 48-bit LBA support enabled, etc.
+        </p>
+        <p>
+            <a href="https://mrqash.blogspot.com/2021/12/ysiwin2kpror3iso.html">Page on qashqai's Blog, including his ISO</a>
+            If you actually mean to install Windows 2000 on slightly modern hardware, then this ISO could be your option. It's actually how I got Windows 2000 to run on my laptop, thanks to the ISO. It includes several updated drivers, a folder inside it which contains extras, like a patched version of the Windows 2000 Extended Kernel (although it's an older version - 2.9, we'll get to what Extended Kernel means later), desktop themes, etc. For more details, check the blogspot page. 
+        </p>
+        <h3>Windows 2000 Kernel Extensions + Installation</h3>
+        <p>On this part of the page, I will include several kernel extension installations. What I'm refering to a kernel extension is a modification of the kernel with the intention of being able to run newer programs, or newer versions of programs, that date from Windows XP on Windows 2000. The reason it is possible is because the kernels between Windows 2000 and Windows XP aren't necessarily different, so, in a way, it's quite an easier step to modify the Windows 2000 kernel than to modify the Windows XP kernel in order for most Vista programs to run on XP, as XP and Vista kernels are majorly different.</p>
+        <p style="font-weight: bold;">blackwingcat's Extended Kernel</p>
+        <p>A popular kernel extension is blackwingcat's Extended Kernel, which is based on optimizing kernel32.dll more, including several other files.</p>
+        <p>More coming soon!</p>
+    </body>
+</html>
