@@ -31,6 +31,18 @@
     a {
         color: white;
     }
+    table {
+        font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+        font-size: 18px;
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+    td, th {
+        border: 1px solid black;
+        text-align: left;
+        padding: 4px;
+        }
     </style>
     <head>
         <meta charset="UTF-8">
@@ -44,7 +56,7 @@
         <hr>
         <p>Here is where I explain the installation and software that can allow use of newer programs on Windows 2000.</p>
         <h3>Windows 2000 Installation ISOs</h3>
-        <p>Here, I will link few URLs which contain downloads for Windows 2000 ISOs, not including upgrade types:</p>
+        <p>Here, I will link few URLs which contain downloads for Windows 2000 ISOs, excluding upgrade types:</p>
         <p>
             <a href="https://winworldpc.com/product/windows-nt-2000/final">ISOs from winworldpc.com</a>
             This is where several ISOs, with different editions and languages, can be downloaded. For personal use, It is recommended to download the Windows 2000 Professional ISO, containing Service Pack 4 (SP4) slipstreamed in. None of these ISOs are modified.
@@ -55,12 +67,83 @@
         </p>
         <p>
             <a href="https://mrqash.blogspot.com/2021/12/ysiwin2kpror3iso.html">Page on qashqai's Blog, including his ISO</a>
-            If you actually mean to install Windows 2000 on slightly modern hardware, then this ISO could be your option. It's actually how I got Windows 2000 to run on my laptop, thanks to the ISO. It includes several updated drivers, a folder inside it which contains extras, like a patched version of the Windows 2000 Extended Kernel (although it's an older version - 2.9, we'll get to what Extended Kernel means later), desktop themes, etc. For more details, check the blogspot page. 
+            If you actually mean to install Windows 2000 on slightly modern hardware, then this ISO could be your option. It's actually how I got Windows 2000 to run on my laptop, thanks to the ISO. It includes several updated drivers, a folder inside it which contains extras, like a patched version of the Windows 2000 Extended Kernel (although it's an older version - 2.9b, we'll get to what Extended Kernel means later), desktop themes 48-bit LBA support, etc. For more details, check the blogspot page. I'll be focusing on this ISO the most during the writing of my page.
         </p>
         <h3>Windows 2000 Kernel Extensions + Installation</h3>
         <p>On this part of the page, I will include several kernel extension installations. What I'm refering to a kernel extension is a modification of the kernel with the intention of being able to run newer programs, or newer versions of programs, that date from Windows XP on Windows 2000. The reason it is possible is because the kernels between Windows 2000 and Windows XP aren't necessarily different, so, in a way, it's quite an easier step to modify the Windows 2000 kernel than to modify the Windows XP kernel in order for most Vista programs to run on XP, as XP and Vista kernels are majorly different.</p>
         <p style="font-weight: bold;">blackwingcat's Extended Kernel</p>
-        <p>A popular kernel extension is blackwingcat's Extended Kernel, which is based on optimizing kernel32.dll more, including several other files.</p>
+        <p>A popular kernel extension is blackwingcat's (or BWC's) Extended Kernel, which is based on optimizing kernel32.dll more, including several other files. If you're gonna want to install that, then make sure to have the available updates for Windows 2000 installed. Win32's and qashqai's ISO shouldn't be a problem, as both have updates already slipstreamed.</p>
+        <p>The most popular version used is v3.0e, although the latest one, as of now, v3.1a2, is only available as a .wlu file. Fortunately, BWC has prepared already a wlupdater, that allows the installation from .wlu files.
+        </p>
+        <a href="http://i430vx.net/files/Win2k/Windows2000-KB935839-v30e-x86-extendedkernel-ENU.exe">Download v3.0e (i430vx's Mirror)</a>
+        <p>In order to download the latest version of BWC's Extended Kernel, that is only available on win2k.org, hosted by BWC himself. After downloading the .exe or .wlu, simply run the file. If it's been downloaded as .wlu though, you're gonna have to use the wlupdater to run files with the .wlu extension. Most probably, the installer will ask you if you want to install Root Certificate updates and a customized version of Windows Installer, click "Yes" on both message boxes. If proceeded successfully, you'll reach upon these Extended Kernel options:</p>
+        <p>
+            <img src="../../images/win2kexkernelsetup.png" alt="Extended Kernel options" width="538" height="371">
+            <img src="../../images/inside qashqai's ISO.png" alt="Contents of qashqai's ISO">
+            <img src="../../images/inside EXKERNEL+EXTRAS.png" alt="Contents of EXKERNEL+EXTRAS folder">
+            <p>For this instance, I'm using the latest version (v3.1a2 as of now). On the first image, these are the options that I use for slightly more improvements, at the cost of stability.</p>
+            <p style="font-weight: bold;">NOTICE: If your CPU doesn't support SSE2, make sure to check "Disabled SSE2".</p>
+            <p>If everything's met, then click on the "Execute" Button to install the extended kernel.</p>
+            <p>Next time when you startup with BWC's Extended Kernel installed for the first time, you'll encounter an error shown on a message box. Ignore it, it will only show up on that one time. So, afterwards, you shouldn't see the error pop up. If everything's been fine as it is now, congratulations, you installed a blackwingcat's Extended Kernel which will allow you to run many XP related programs on Windows 2000.</p>
+            <p style="font-weight: bold;">ANOTHER NOTICE: If you plan to use qashqai's ISO, he will recommend you to install his modified version of BWC's Extended Kernel v2.9b. It is located inside the ISO, at EXKERNEL+EXTRAS\EXKERNEL folder (as you can see on the second image). More details about that folder later. Though, because it's v2.9b, it is quite outdated. It is up to you on what version you want to run.</p>
+        </p>
+        <p>If you'll open up Internet Explorer, and go to Tools, then Internet Options, and Advanced after that, scroll down to Security settings, you will find the options of enabling TLS 1.1 and 1.2. Check both, and TLS 1.0 if it was unchecked before. Yet Internet Explorer 6 SP1, the last version to work on Windows 2000, is still old, practically quite useless. I'll mention what alternative browsers you can use later on this post. We still have to set up several things remaining, like installing Visual C++ from 2010-2019, .NET Framework 3.0 - 4.0, and others. Normally, you'd ask me, how you would be able to install them, cause those were unheard of during Windows 2000. Well, blackwingcat modified the installers in such a way that they are intended to be run on Windows 2000 Extended Kernel.</p>
+        <p>And, qashqai was humble enough to add an EXKERNEL+EXTRAS folder inside his ISO. On the third image from above, you can see all the contents inside the folder. In the VISUAL C++ REDISTS folder, you can a Visual C++ 2008 fix with instructions, and the rest of the filers are installers for VC 2010, 2012, 2013, 2015, 2017, 2019. Meanwhile, NET FX contains a .NET Framework 1.1 installer, a .Net Framework 2.0 SP2 installer, and a .txt file with a link to a modified .NET Framework 4.0 installer. You know what? I'll just give the files you need to download directly with these hyperlinks:
+            <br>
+            <a href="https://mega.nz/file/8egCQapB#VyGW-j-A7i0g4BbfUimjd0GYbUTYsHxYyp0bmzqYGso">Custom installer for .NET Framework 3.0 and 3.5 (Requires .NET Framework 2.0 to be installed first)</a>
+            <br>
+            If you downloaded the file on Windows 8, Windows 10 or 11, Microsoft Defender will possibly assume that it's a trojan, even though it's just a false-positive.
+            <br>
+            <a href="https://drive.google.com/file/d/14Nez-acl5BIogH7eyBHNBwmpTwoFbnbx/view?usp=sharing">.NET Framework 4.0</a>
+        </p>
+        <p>I know there are other folders as you can see in that third image. I'll explain some that can't be understood immediately. </p>
+        <p>- Compatibility Forcer, tricks the installers into thinking they're running on Windows XP, though it doesn't work with many installers.
+            <br>
+           - fcwin088, a more advanced program that actually forces the installers to run by doing the same trick as the Compatiblity Forcer does, but it's slightly more complicated to use.
+           <br>
+        </p>
+        <p>Now, if you don't necessarily want to use fcwin088 because every single time it requires manual changing of the compatibility, like me, you can always use an OS Spoofer. It writes the User Environment Variable, so that a majority of installers and some programs think that they run on XP, without having to individually modify each file with fcwin088. For example, Blender (as the program itself, but probably installer included) needs for the OS Spoofer to write the UEV so it thinks that it's running on XP, in order to start up Blender in the first place, but that is a particularly rare example, as most programs after installation aren't required for the OS Spoofer to be set to XP. Keep in mind that installing the programs initially does require the OS Spoofer.
+            <a href="https://retrosystemsrevival.blogspot.com/2018/06/windows-system-spoofer.html">For more information about OS Spoofer, check here.</a>
+            <br>
+            <a href="https://mega.nz/file/f4AgEA5S#KDwik77wbPOsN0Bf71NbyeG6o4XZBnHvAKjOJc7U1Ug">OS Spoofer</a>
+        </p>
+        <h3>List of latest programs running with Extended Kernel + OS Spoofer</h3>
+        <p>This is a list of the last version of programs able to run on Windows 2000 with Extended Kernel, and OS Spoofer for running the installers, and, in rare cases, the programs themselves. They will all be sorted out in an HTML table.
+            <br>
+            Legend:
+            <br>
+            ! - requires caution (due to telemetry or other stuff)
+            <br>
+            ? - unconfirmed
+            <br>
+            * - recommended
+            <p style="font-weight: bold;">Utilities</p>
+        <table>
+            <tbody>
+                <tr>
+                    <th></th>
+                    <th>Program name</th>
+                    <th>Last version supported</th>
+                    <th>Download link</th>
+                    <th>Additional notes</th>
+                </tr>
+                <tr>
+                    <th>*</th>
+                    <th>7-Zip</th>
+                    <th>Latest (Vanilla Win2k inclusive)</th>
+                    <th><a href="https://www.7-zip.org/index.html">Official site</a></th>
+                    <th>Download the x86 version (ofc cause win2k is x86)</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>CDBurnerXP</th>
+                    <th>Latest</th>
+                    <th><a href="https://www.cdburnerxp.se/">Official site</a></th>
+                    <th>Additional notes</th>
+                </tr>
+            </tbody>
+        </table>
+        </p>
         <p>More coming soon!</p>
     </body>
 </html>
