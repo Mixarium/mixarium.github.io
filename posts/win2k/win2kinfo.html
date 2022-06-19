@@ -199,7 +199,7 @@
                         <th>Additional notes</th>
                     </tr>
                     <tr>
-                        <th>*</th>
+                        <th></th>
                         <th>Legacy Mypal</th>
                         <th>29.3.0</th>
                         <th><a href="https://www.mypal-browser.org/download.html">Unofficial site</a>
@@ -207,12 +207,23 @@
                         <th>This is pre-Quantum Firefox. Discontinued version of Mypal, was mainly intended for XP, but can be run on Windows 2000 with kernel extensions.</th>
                     </tr>
                     <tr>
-                        <th>?</th>
+                        <th>*</th>
                         <th>Mypal 68</th>
                         <th>68.12.1 - 68.12.4</th>
                         <th><a href="https://github.com/Feodor2/Mypal68/">GitHub Repository</a>
-                            <a href="http://web.archive.org/web/20220407150040/https://01.sendcdn.com/d/cjyqhste6gosj4l4yv2fdefx3mppdsxyzphmoleos2d2iodaam37tizlxeicd32tiy4tm6r3/mypal-68.12.1.en-US.win32.patched.zip">Archive.org (68.12.1 release, patched for file downloads)</a></th>
-                        <th>Doesn't work on Windows 2000 with the Extended Kernel by itself, but <a href="https://mrqash.blogspot.com/2022/04/mypal-68-firefox-68121-on-windows-2000.html">qashqai uploaded a post on how to run Mypal 68 (68.12.1 version).</a> I still couldn't get it to work, from my experience. Without patching the files to make the browser run on Windows 2000, you'll get an error like this: "The procedure entry point NtReleaseKeyedEvent could not be located in the dynamic link library ntdll.dll". Even after I followed the guide, I still had the same error.</th>
+                            <a href="https://mega.nz/file/ZWBmDJTI#ywoNL1jfEk3-KNsb6u4RdRhaeU2tJTfkjLtb5If2uuo">Mega.nz (v68.12.4b with additional fixes to run on Win2k)</a></th>
+                        <th>UPDATE: I managed to run Mypal68 with an additional change that's not mentioned in qashqai's post. Yes, <a href="https://mrqash.blogspot.com/2022/04/mypal-68-firefox-68121-on-windows-2000.html">qashqai uploaded a post on how to run Mypal 68 (68.12.1 version).</a> The latest version still works fine on Windows 2000 though. Because I don't want you to do the unmentioned modification, I included the patched version that I modified in the download links. Mega.nz still doesn't work on pure Mypal68, by the way, so you could resort to Legacy Mypal which can run Mega.nz.</th>
+                    </tr>
+                    <tr>
+                        <th>!</th>
+                        <th>360Chrome Extreme Explorer (MSFN Rebuild)</th>
+                        <th>11.0.2031 (Based on Chromium 69),
+                            12.0.1247 (Based on Chromium 78),
+                            13.0.2206 (Based on Chromium 86),
+                            13.5.1030 (Based on Chromium 86)
+                        </th>
+                        <th><a href="http://forum.eclectic4un.me/viewtopic.php?f=45&t=76">EclecBoard</a></th>
+                        <th>Versions 12 and 13 are slightly more unstable than 11. By adding the <span style="color: blue;">--enable-features=NetworkServiceInProcess</span> toggle, less unstability should be expected.</th>
                     </tr>
                 </tbody>
             </table>
