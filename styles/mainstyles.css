@@ -1,0 +1,46 @@
+body {
+    background-color: #696969;
+}
+h1 {
+    font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif; 
+    font-size: 40px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 23px; 
+    } 
+h3 { 
+    font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif; 
+    font-size: 25px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 23px;
+     } 
+p, a { 
+    font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif; 
+    font-size: 18px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 100; 
+    line-height: 23.4px; 
+    }
+a {
+    color: rgb(13, 0, 126);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+table {
+    font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+    font-size: 18px;
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 4px;
+    }
