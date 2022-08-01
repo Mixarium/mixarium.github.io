@@ -31,7 +31,7 @@
         <p>On this part of the page, I will include several kernel extension installations. What I'm refering to a kernel extension is a modification of the kernel with the intention of being able to run newer programs, or newer versions of programs, that date from Windows XP on Windows 2000. The reason it is possible is because the kernels between Windows 2000 and Windows XP aren't necessarily different, so, in a way, it's quite an easier step to modify the Windows 2000 kernel than to modify the Windows XP kernel in order for most Vista programs to run on XP, as XP and Vista kernels are majorly different.</p>
         <p style="font-weight: bold;">blackwingcat's Extended Kernel</p>
         <p>A popular kernel extension is blackwingcat's (or BWC's) Extended Kernel, which is based on optimizing kernel32.dll more, including several other files. If you're gonna want to install that, then make sure to have the available updates for Windows 2000 installed. Win32's and qashqai's ISO shouldn't be a problem, as both have updates already slipstreamed.</p>
-        <p>The most popular version used is v3.0e, although the latest one, as of now, v3.1a2, is only available as a .wlu file. Fortunately, BWC has prepared already a wlupdater, that allows the installation from .wlu files.
+        <p>The most popular version used is v3.0e, although the latest one, as of now, v3.1b3, is only available as a .wlu file. Fortunately, BWC has prepared already a wlupdater, that allows the installation from .wlu files.
         </p>
         <a href="http://i430vx.net/files/Win2k/Windows2000-KB935839-v30e-x86-extendedkernel-ENU.exe">Download v3.0e (i430vx's Mirror)</a>
         <p>In order to download the latest version of BWC's Extended Kernel, that is only available on win2k.org, hosted by BWC himself. After downloading the .exe or .wlu, simply run the file. If it's been downloaded as .wlu though, you're gonna have to use the wlupdater to run files with the .wlu extension. Most probably, the installer will ask you if you want to install Root Certificate updates and a customized version of Windows Installer, click "Yes" on both message boxes. If proceeded successfully, you'll reach upon these Extended Kernel options:</p>
@@ -39,7 +39,7 @@
             <img src="../../images/win2kexkernelsetup.png" alt="Extended Kernel options" width="538" height="371">
             <img src="../../images/inside qashqai's ISO.png" alt="Contents of qashqai's ISO">
             <img src="../../images/inside EXKERNEL+EXTRAS.png" alt="Contents of EXKERNEL+EXTRAS folder">
-            <p>For this instance, I'm using the latest version (v3.1a2 as of now). On the first image, these are the options that I use for slightly more improvements, at the cost of stability.</p>
+            <p>For this instance, I'm using the latest version (v3.1b3 as of now). On the first image, these are the options that I use for slightly more improvements, at the cost of stability.</p>
             <p style="font-weight: bold;">NOTICE: If your CPU doesn't support SSE2, make sure to check "Disabled SSE2".</p>
             <p>If everything's met, then click on the "Execute" Button to install the extended kernel.</p>
             <p>Next time when you startup with BWC's Extended Kernel installed for the first time, you'll encounter an error shown on a message box. Ignore it, it will only show up on that one time. So, afterwards, you shouldn't see the error pop up. If everything's been fine as it is now, congratulations, you installed a blackwingcat's Extended Kernel which will allow you to run many XP related programs on Windows 2000.</p>
@@ -133,18 +133,25 @@
                     <th></th>
                 </tr>
                 <tr>
-                    <th>?</th>
-                    <th>Process Hacker</th>
-                    <th>2.38</th>
-                    <th><a href="https://mega.nz/file/tbQSFT4L#uxVRw6inp8WU6TTgWRAeBsvSAEmmKQLVKMLVbbHdq70">Mega.nz</a></th>
-                    <th>I've tried running the last version supported on XP of Process Hacker with the Windows 2000 Extended Kernel, but it'd only result into an error: "The procedure entry point NtCreateKeyedEvent could not be located in the dynamic link library ntdll.dll". Setup works fine though.</th>
-                </tr>
-                <tr>
                     <th>*</th>
                     <th>Revo Uninstaller</th>
                     <th>Latest</th>
                     <th><a href="https://www.revouninstaller.com/revo-uninstaller-free-download/">Official site</a></th>
                     <th>Uninstaller tool, unofficially supported on XP</th>
+                </tr>
+                <tr>
+                    <th>*</th>
+                    <th>qBitTorrent</th>
+                    <th>4.1.9.1</th>
+                    <th><a href="https://sourceforge.net/projects/qbittorrent/files/qbittorrent-win32/qbittorrent-4.1.9.1/qbittorrent_4.1.9.1_setup.exe/download">Official site</a></th>
+                    <th>Recommended by torrent communities</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>youtube-dl</th>
+                    <th>Latest</th>
+                    <th><a href="https://yt-dl.org/downloads/2021.12.17/youtube-dl.exe">Official site</a></th>
+                    <th>Visual C++ 2010 needs to be installed</th>
                 </tr>
             </tbody>
         </table>
@@ -172,7 +179,7 @@
                         <th>68.12.1 - 68.12.4</th>
                         <th><a href="https://github.com/Feodor2/Mypal68/">GitHub Repository</a>
                             <a href="https://mega.nz/file/ZWBmDJTI#ywoNL1jfEk3-KNsb6u4RdRhaeU2tJTfkjLtb5If2uuo">Mega.nz (v68.12.4b with additional fixes to run on Win2k)</a></th>
-                        <th>Mypal68 can be run with an additional change that's not mentioned in qashqai's post. Yes, <a href="https://mrqash.blogspot.com/2022/04/mypal-68-firefox-68121-on-windows-2000.html">qashqai uploaded a post on how to run Mypal 68 (68.12.1 version).</a> The latest version works fine on Windows 2000. I included my patched version that I modified in the download links. Mega.nz still doesn't work on pure Mypal68, so you could resort to Legacy Mypal which can run Mega.nz.</th>
+                        <th><a href="https://mrqash.blogspot.com/2022/04/mypal-68-firefox-68121-on-windows-2000.html">qashqai uploaded a post on how to run Mypal 68.</a> Do note that you should follow this guide if you've installed BWC's Extended Kernel prior to v3.1b, else, no modification is required for v3.1b and above.</th>
                     </tr>
                     <tr>
                         <th>!</th>
@@ -187,7 +194,68 @@
                     </tr>
                 </tbody>
             </table>
+            <p style="font-weight: bold;">Office</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>Program name</th>
+                        <th>Last version supported</th>
+                        <th>Download link</th>
+                        <th>Additional notes</th>
+                    </tr>
+                    <tr>
+                        <th>*</th>
+                        <th>LibreOffice</th>
+                        <th>5.4.7.2</th>
+                        <th><a href="https://downloadarchive.documentfoundation.org/libreoffice/old/5.4.7.2/">Official site</a></th>
+                        <th>Unsure if only the portable version works without errors.</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Microsoft Office</th>
+                        <th>Office</th>
+                        <th><a href="https://mega.nz/file/5eRjBSiL#P1pmjVQLVpt5Bo6FysPmE9nX0_bOJjTKy9vEKccPXcU">2003</a>,
+                        <a href="https://mega.nz/file/1fpGBDDR#hJDlo8cSjNze2XfY6GIZQ9I9Icq-e4OfCEefBQE2JV4">2007</a>,
+                        <a href="https://mega.nz/file/YbwGCbTI#IBmr0sk2k1AeZx5SFKONy4nt4D2N39mNfYWq-yoJqkM">2010</a></th>
+                        <th>To install Office 2007 or 2010, follow <a href="https://w2k.phreaknet.org/guide/">this tutorial</a> (not affiliated), <br>and search for the steps which include Office 2007 or 2010 installation.</th>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="font-weight: bold;">Media</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>Program name</th>
+                        <th>Last version supported</th>
+                        <th>Download link</th>
+                        <th>Additional notes</th>
+                    </tr>
+                    <tr>
+                        <th>*</th>
+                        <th>VLC media player</th>
+                        <th>Latest</th>
+                        <th><a href="https://www.videolan.org/vlc/">Official site</a></th>
+                        <th>Powerful media player that supports many formats</th>
+                    </tr>
+                    <tr>
+                        <th>*</th>
+                        <th>Audacity</th>
+                        <th>2.1.3, 2.2.3 (backported version)</th>
+                        <th><a href="https://archive.org/download/audacity-win-2.1.3_201803/audacity-win-2.1.3.exe">Archive.org (2.1.3)</a>,<br>
+                        <a href="https://retrosystemsrevival.blogspot.com/2019/12/audacity-223-xp.html">Retrosystemsrevival Blogspot (2.2.3 backported)</a></th>
+                        <th>Visual C++ 2019 required to be installed</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>ShareX</th>
+                        <th>12.0</th>
+                        <th><a href="https://github.com/ShareX/ShareX/releases/download/v12.0.0/ShareX-12.0.0-setup.exe">Github</a></th>
+                        <th>.NET Framework 4.0 required to be installed</th>
+                    </tr>
+                </tbody>
+            </table>
         </p>
-        <p>More coming soon!</p>
     </body>
 </html>
